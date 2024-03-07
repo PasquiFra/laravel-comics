@@ -1,4 +1,3 @@
-@import('../../scss/components/footer-bottom.scss')
 
 <footer id="footer-bottom">
     <div class="container flex justify-between">
