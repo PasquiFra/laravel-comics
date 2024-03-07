@@ -1,28 +1,10 @@
+@extends('layouts.layout')
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel Comics</title>
+@section('title', 'Home')
 
-    {{-- Importo Bootstrap e Scss --}}
-    @vite('resources/js/app.js')
-
-</head>
-<body>
-    {{-- Riferimento all'Header --}}
-    @include('components.header')
-
-    {{-- Riferimento al Footer-Top --}}
-        @include('components.footer-top')
-    
-    {{-- Riferimento al Footer-Center --}}
-        @include('components.footer-center')
-    
-    {{-- Riferimento al Footer-Bottom --}}
-        @include('components.footer-bottom')
-    
-</body>
-</html>
+@section('main-content')
+    {{-- MAIN CONTENT --}}
+    <main>
+        <h1>Questa è la home</h1>
+    </main>
+@endsection

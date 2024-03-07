@@ -1,6 +1,6 @@
 
 <footer id="footer-bottom">
-    <div class="container flex justify-between">
+    <div class="container flex">
         <nav class="flex center">
             <div class="sign-up">
                 <a>SIGN-UP NOW!</a>

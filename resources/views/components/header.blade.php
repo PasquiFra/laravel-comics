@@ -5,12 +5,11 @@
 
 
 <header>
-    <div class="container flex justify-header">
-
+    <div class="container flex center">
         <figure>
             <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC Logo">
         </figure>
-        <nav class="flex center">
+        <nav class="flex">
             <ul class="flex">
                 @foreach ( $navs as $nav)  
                 <li class="flex center list-setup">
@@ -21,8 +20,8 @@
                 @endforeach
             </ul>
         </nav>
-
     </div>
 </header>
 
-<div class="background"></div>
+<div class="background">
+</div>

@@ -1,10 +1,7 @@
-@use './_reset';
 @use './_utilities';
+@use './_reset';
 @use './components/header.scss';
 @use './components/footer-top.scss';
 @use './components/footer-center.scss';
 @use './components/footer-bottom.scss';
-@use './components/comics.scss';
-
-
-@import '~bootstrap/scss/bootstrap';
+@use './components/pages/comics.scss';
