@@ -1,0 +1,35 @@
+footer {
+    background-color: dodgerblue;
+
+    height: 125px;
+}
+
+
+ul {
+    list-style-type: none;
+
+
+    li {
+        margin: 20px;
+
+        a {
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    img {
+        height: 100%;
+    }
+
+    span {
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.75rem;
+
+        padding: 0 8px;
+    }
+
+}
