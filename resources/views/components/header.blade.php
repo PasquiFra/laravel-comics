@@ -7,7 +7,7 @@
 <header>
     <div class="container flex center">
         <figure>
-            <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC Logo">
+            <a href="{{url('/')}}"><img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC Logo"></a>
         </figure>
         <nav class="flex">
             <ul class="flex">
