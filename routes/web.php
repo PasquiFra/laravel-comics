@@ -21,14 +21,12 @@ Route::get('comics', function () {
     return view('comics');
 })->name('comics');
 
-Route::get('show/{index}', function ($i) {
+Route::get('show/{index}', function ($index) {
 
     $comics = config('comics');
-    foreach ($comics as $index => $c) {
-        if ($i == $index) $comic = $comics[$index];
+    foreach ($comics as $i => $c) {
+        if ($i == $index) $comic = $c;
     };
-    dump($i, $comic);
 
-
-    return view('show', $comic);
+    return view('products.show', compact('comic'));
 })->name('show');
