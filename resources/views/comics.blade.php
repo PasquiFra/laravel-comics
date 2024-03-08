@@ -14,13 +14,16 @@
                 <h1 class="flex">current series</h1>
             </div>
             <ul class="card-col">
-                @foreach ($books as $b)
+                @foreach ($books as $i => $b)
+                @php dump($b) @endphp
                 <li class="card">
                     <figure>
-                        <img src="{{$b['thumb']}}" alt="">
+                        <a href="{{route('show', $loop->index)}}">
+                            <img src="{{$b['thumb']}}" alt="">
+                        </a>
                     </figure>
                     <h5>
-                        <a href="{{$b['thumb']}}">{{$b['title']}}</a>
+                        <a href="{{route('show', $loop->index)}}">{{$b['title']}}</a>
                     </h5>
                 </li>
                 @endforeach

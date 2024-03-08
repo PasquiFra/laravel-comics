@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('comics', function () {
     return view('comics');
 })->name('comics');
+
+Route::get('show/{index}', function ($i) {
+
+    $comics = config('comics');
+    foreach ($comics as $index => $c) {
+        if ($i == $index) $comic = $comics[$index];
+    };
+    dump($i, $comic);
+
+
+    return view('show', $comic);
+})->name('show');

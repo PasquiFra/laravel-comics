@@ -2,7 +2,7 @@
 
 return [
     [
-        'text' => 'Comics',
+        'text' => 'Characters',
         'url' => '#',
         'current' => false,
     ],
@@ -12,96 +12,43 @@ return [
         'current' => true,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'Movies',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'TV',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'Games',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'Collectibles',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'Videos',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'Fans',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'News',
         'url' => '#',
         'current' => false,
     ],
     [
-        'text' => 'Comics',
+        'text' => 'Shop',
         'url' => '#',
         'current' => false,
     ]
 ];
-
-// return [
-//     [
-//         'text' => 'Characters',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'Comics',
-//         'url' => '#',
-//         'current' => true,
-//     ],
-//     [
-//         'text' => 'Movies',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'TV',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'Games',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'Collectibles',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'Videos',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'Fans',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'News',
-//         'url' => '#',
-//         'current' => false,
-//     ],
-//     [
-//         'text' => 'Shop',
-//         'url' => '#',
-//         'current' => false,
-//     ]
-// ];
