@@ -13,7 +13,16 @@
                     <span class="add-2">VIEW GALLERY</span>
                 </figure>
             </div>
-            <h2>{{$comic['title']}}</h2>
+            <div class="flex space-between">
+                <div id="comic-content">
+                    <h2>{{$comic['title']}}</h2>
+                    <div id="info"></div>
+                    <p> {{$comic['description']}} </p>
+                </div>
+                <div id="adv">
+                    <img src=" {{Vite::asset('/resources/img/adv.jpg')}} " alt="DC POWER VISA">
+                </div>
+            </div>
             
         </div>
     </section>

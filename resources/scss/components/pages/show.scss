@@ -60,8 +60,27 @@
 
     }
 
-    h2 {
-        text-transform: uppercase;
+    .space-between {
+        justify-content: space-between;
     }
+
+    #comic-content {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+        flex-grow: 0;
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        p {}
+
+    }
+
+    #adv {
+        width: calc(100% / 3);
+    }
+
 
 }
