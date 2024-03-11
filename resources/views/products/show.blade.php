@@ -13,7 +13,7 @@
                     <span class="add-2">VIEW GALLERY</span>
                 </figure>
             </div>
-            <div class="flex space-between">
+            <div class="flex space-between width-full">
                 <div id="comic-content">
                     <h2>{{$comic['title']}}</h2>
                     <div id="info" class="flex space-between">
@@ -33,35 +33,45 @@
                     <img src=" {{Vite::asset('/resources/img/adv.jpg')}} " alt="DC POWER VISA">
                 </div>
             </div>
-            <div class="flex space-between">
-                <div>
+            <div id="main-bottom" class="flex space-between">
+                <div id="authors">
                     <h3>Talent</h3>
-                    <ul>
-                        Art by:
-                        <li>
-                        
-                        </li>
-                    </ul>
-                    <ul>
-                        Written by:
-                        <li>
-                        
-                        </li>
-                    </ul>
+                    <div id="artists" class="flex space-between">
+                        <div>
+                            Art by:
+                        </div>
+                        <div class="content">
+                            @foreach ($comic['artists'] as $artist )
+                            <a href="#">{{$artist}}{{$loop->last ? '.' : ','}}</a>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div id="writers" class="flex space-between">
+                        <div>
+                            Written by:
+                        </div>
+                        <div class="content">
+                            @foreach ($comic['writers'] as $writer )
+                            <a href="#">{{$writer}}{{$loop->last ? '.' : ','}}</a>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div id="specs">
                     <h3>Specs</h3>
-                    <ul>
-                        Series:
-                        <li>
-                        
-                        </li>
-                    </ul>
                     <div>
-                        U.S. Price: <span>{{$comic['price']}}</span>
+                        <span>Series: </span> 
+                        <span>
+                            <a href="#">{{$comic['series']}}</a>
+                        </span>
                     </div>
                     <div>
-                        On Sale Date: 
+                        <span>U.S. Price: </span>
+                        <span>{{$comic['price']}}</span>
+                    </div>
+                    <div>
+                        <span>On Sale Date: </span>
+                        <span>{{$comic['sale_date']}}</span>
                     </div>
                 </div>
             </div>

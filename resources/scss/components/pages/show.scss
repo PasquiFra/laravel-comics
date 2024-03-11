@@ -1,8 +1,9 @@
 #show-comics {
+
     background-color: rgb(255, 255, 255);
 
     .container {
-        width: calc(100% * 2 / 3);
+        width: 75%;
         position: relative;
         padding: 1.2rem 0;
     }
@@ -68,7 +69,7 @@
     #comic-content {
         flex-wrap: wrap;
         display: flex;
-        max-width: 700px;
+        max-width: calc(100% / 3 * 2);
         margin-right: 20px;
 
         #info {
@@ -119,7 +120,59 @@
 
     }
 
-    #adv {}
+    #main-bottom {
 
+        width: 100%;
+        color: #104558;
 
+        #authors {
+
+            width: 50%;
+            flex-grow: 1;
+            flex-shrink: 0;
+
+            #artists,
+            #writers {
+
+                margin: 15px 0;
+                padding: 7px 0;
+                border-top: 1px solid rgba(207, 205, 205, 0.603);
+
+                .content {
+                    width: 75%;
+                }
+
+                a {
+                    color: dodgerblue;
+                    text-transform: capitalize;
+                }
+            }
+
+            #writers {
+                border-bottom: 1px solid rgba(207, 205, 205, 0.603);
+            }
+        }
+
+        #specs {
+            padding-left: 25px;
+            width: 50%;
+
+            a {
+                color: dodgerblue;
+                text-transform: uppercase;
+            }
+
+            >div {
+                display: flex;
+                border-top: 1px solid rgba(207, 205, 205, 0.603);
+
+                margin: 15px 0;
+                padding: 7px 0;
+
+                :first-child {
+                    width: 200px;
+                }
+            }
+        }
+    }
 }
